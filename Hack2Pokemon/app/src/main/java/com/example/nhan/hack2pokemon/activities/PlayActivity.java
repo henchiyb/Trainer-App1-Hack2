@@ -227,8 +227,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
                 intent.putExtra(Constant.SCORE_KEY, playScore);
                 setResult(RESULT_OK, intent);
                 rootLayout.setVisibility(View.INVISIBLE);
-                createCircularReveal(layoutBackground, rootLayout.getHeight(), 0);
-
+                createCircularReveal(rootLayout, rootLayout.getHeight(), 0);
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
